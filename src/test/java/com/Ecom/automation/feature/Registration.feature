@@ -4,16 +4,16 @@
   			Given navigate to Website
   			And click on signup button
   			When user fill all the details and click on create account button
-  			|Name          |Test	Name					|
+  			|Name          |Test	Name		|
   			|Email         |Testemail@data.com	|
-  			|Password      |TestP@ssw0rd				|
-  			|FirstName     |TestFirstName	   		|
-  			|LastName      |TestLastname				|
-  			|Address       |TestAddress00				|
-  			|State 		 	 	 |TestState						|
-  			|City          |testCity						|
-  			|ZipCode			 |70008								|
-  			|Mobile Number |9000000546					|
+  			|Password      |TestP@ssw0rd		|
+  			|FirstName     |TestFirstName	   	|
+  			|LastName      |TestLastname		|
+  			|Address       |TestAddress00		|
+  			|State 	       |TestState		|
+  			|City          |testCity		|
+  			|ZipCode       |70008			|
+  			|Mobile Number |9000000546	        |
   			
   			Then user should successfully registerd
   		
