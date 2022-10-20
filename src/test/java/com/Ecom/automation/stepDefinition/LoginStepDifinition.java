@@ -11,6 +11,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+
 public class LoginStepDifinition {
 	
 	HomePage homepage = new HomePage();
@@ -19,7 +20,7 @@ public class LoginStepDifinition {
 	
 	@Given("navigate to Website")
 	public void naviagte_to_website() {
-	  Browser.navigateToWebsite();
+		Browser.navigateToWebsite();
 	}
 
 	@Given("click on login")

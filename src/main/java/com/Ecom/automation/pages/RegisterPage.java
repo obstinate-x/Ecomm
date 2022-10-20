@@ -32,14 +32,14 @@ public class RegisterPage {
 	private WebElement signup_button;
 	
 	
-	public void enter_Name() {	
+	public void enter_Name(String data) {	
 		Waits.waitTillElementPresentForClicking(name);
-    name.sendKeys(Data.firstname);
+    Element.TypeText(name, data);
 	
 	}
-	public void enter_Email() {	
-		//email.sendKeys(Data.email);
-		email.sendKeys(Data.loginEmail);
+	public void enter_Email(String data) {	
+		
+		Element.TypeText(email, data);
 	}
 	public void click_on_signup() {	
 		signup_button.click();

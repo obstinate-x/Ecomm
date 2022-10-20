@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = {"src\\test\\java\\com\\Ecom\\automation\\feature\\Login.feature"},
+		features = {"src\\test\\java\\com\\Ecom\\automation\\feature\\Registration.feature"},
 		glue = {"com.Ecom.automation.utils", "com.Ecom.automation.stepDefinition"},
 		plugin = {"pretty", "html:target\\cucumber-report\\report.html"}
 		

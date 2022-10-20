@@ -17,7 +17,6 @@ public class Hooks {
 		
 		Browser.startBrowser();
 		Browser.maximize();
-		
 	}
 	
 	@After

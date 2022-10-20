@@ -1,11 +1,14 @@
 package com.Ecom.automation.stepDefinition;
 
+import java.util.Map;
+
 import com.Ecom.automation.base.Browser;
 
 import com.Ecom.automation.pages.AccountPage;
 import com.Ecom.automation.pages.HomePage;
 import com.Ecom.automation.pages.RegisterPage;
 
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -16,6 +19,7 @@ public class RegistrationStepDefinition {
 	HomePage homepage = new HomePage();
 	RegisterPage registerpage = new RegisterPage();
 	 AccountPage accountpage = new AccountPage();
+		static Map<String, String> map;
 
 
 
@@ -25,10 +29,13 @@ public class RegistrationStepDefinition {
 	}
 
 	@When("user fill all the details and click on create account button")
-	public void user_fill_all_the_details_and_click_on_create_account_button() {
+	public void user_fill_all_the_details_and_click_on_create_account_button(DataTable datatable) {
 		
-		registerpage.enter_Name();
-		registerpage.enter_Email();
+		Map<String, String> map = datatable.asMap(String.class, String.class);
+				
+		registerpage.enter_Name(map.get("Name"));
+		registerpage.enter_Email(map.get("Email"));
+		
 		registerpage.click_on_signup();
 		registerpage.select_title_as_MR();
 		registerpage.enter_Password();
@@ -55,8 +62,8 @@ public class RegistrationStepDefinition {
 	
 	@When("user enter name and existing email")
 	public void user_enter_name_and_existing_email() {
-		registerpage.enter_Name();
-		registerpage.enter_Email();
+		registerpage.enter_Name(map.get("Name"));
+		registerpage.enter_Email(map.get("Email"));
 		registerpage.click_on_signup();	
 	}
 	
