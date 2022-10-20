@@ -18,7 +18,7 @@
   			Then user should successfully registerd
   		
 	Scenario: Verify registration with existing email
-				Given navigate to Website
+			Given navigate to Website
   			And click on signup button
   			When user enter name and existing email
   			Then user should see "Email Address already exist!" text
