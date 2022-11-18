@@ -1,4 +1,4 @@
-/*package com.Ecom.automation.config;
+package com.Ecom.automation.config;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -97,4 +97,4 @@ public class DataSheet {
 				}
 				return a;
 				
-	}*/
+	}
